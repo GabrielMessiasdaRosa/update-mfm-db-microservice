@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check card data db</title>
+  </head>
+  <body>
+    <main>
+      <nav class="navbar">
+        <a class="navbarItem" href="http://localhost:3000/">Home</a>
+        <a class="navbarItem" href="http://localhost:3000/card-list"
+          >Card list</a
+        >
+      </nav>
+      <section class="space-y-10">
+        <div class="space-y-5">
+          <h1>List of all cards in Neon DB</h1>
+          <p>
+            Check environment variables in .env file. DATASOURCE_URL should be
+            the url of the database that you want to check.
+          </p>
+        </div>
+        <div>
+          <button
+            id="triggerBtn"
+            class="triggerBtn"
+            onclick="getCardsFromNeonDB()"
+          >
+            Check
+          </button>
+          <div id="status"></div>
+          <div>
+            <ul id="cardsList" class="cardsList"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./index.js"></script>
+</html>

@@ -13,7 +13,7 @@ lerna-debug.log*
 
 # OS
 .DS_Store
-
+/public/bulk-data/bulk-data.json
 # Tests
 /coverage
 /.nyc_output
@@ -26,7 +26,7 @@ lerna-debug.log*
 *.launch
 .settings/
 *.sublime-workspace
-
+.env*
 # IDE - VSCode
 .vscode/*
 !.vscode/settings.json
